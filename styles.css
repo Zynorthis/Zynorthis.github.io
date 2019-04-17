@@ -22,19 +22,27 @@
     color: yellowgreen;
 }
 
+.parallax{
+    background-image:  url("/Resources/background.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #name-fade-effect{
     text-transform: uppercase;
     text-align: center;
-    background-image:  url("Resources\background.jpg");
     width: 80%;
     margin: auto;
-    margin-top: 15px;
+    padding-top: 50px;
+    font-size: 36px;
     overflow: hidden;
-
 }
 
 body {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     color: #555;
     font-size: 16px;
     line-height: 1.6em;
@@ -43,10 +51,13 @@ body {
 
 .fadeIn-2{
     text-align: center;
+    color: white;
 }
 
 .fadeIn-4{
     text-align: center;
+    color: white;
+    padding-top: 15px;
 }
 
 .container{
@@ -55,7 +66,12 @@ body {
     overflow: hidden;
 }
 
+#about-me{
+    height: 600px;
+}
+
 footer{
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
