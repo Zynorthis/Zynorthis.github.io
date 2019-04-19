@@ -39,10 +39,10 @@
     padding-top: 50px;
     font-size: 36px;
     overflow: hidden;
+    letter-spacing: 0.25em;
 }
 
 body {
-    /* background-color: greenyellow; */
     color: #555;
     font-size: 16px;
     line-height: 1.6em;
@@ -64,6 +64,7 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    padding-top: 15px;
 }
 
 #about-me{
