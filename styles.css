@@ -49,10 +49,28 @@
     line-height: 48px;
 }
 
+h1{
+    letter-spacing: 0.1em;
+    word-spacing: 5px;
+    font-size: 48px;
+}
+
+p{
+    font-size: 18px;
+}
+
 @media only screen and (max-width: 600px){
     #name-fade-effect{
         word-spacing: 5px;
         font-size: 32px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 15px;
     }
 }
 
@@ -82,12 +100,28 @@ body {
     text-align: center;
 }
 
-#about-me{
+/* #about-me{
     height: 600px;
-}
+} */
 
 footer{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+table, th, td{
+	font-family: "Arial", Arial, Sans-serif;
+	border-collapse: collapse;
+	border-color: black;
+	border: 0.125rem solid black;
+	font-size: 1.25rem;
+}
+
+tr:nth-child(even) {
+	background-color: Lightgray;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
 }
