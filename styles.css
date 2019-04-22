@@ -12,7 +12,7 @@
 }
 
 .navbar li{
-    font-size: 18px;
+    font-size: 25px;
     padding-right: 15px;
     display: inline;
 }
@@ -41,10 +41,19 @@
     width: 80%;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 15px;
-    font-size: 48px;
+    padding-bottom: 25px;
     overflow: hidden;
     letter-spacing: 0.25em;
+    word-spacing: 15px;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+@media only screen and (max-width: 600px){
+    #name-fade-effect{
+        word-spacing: 5px;
+        font-size: 32px;
+    }
 }
 
 body {
