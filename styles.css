@@ -27,7 +27,7 @@
 }
 
 .parallax{
-    background-image:  url("/Resources/background.jpg");
+    background-image:  url("/Resources/img/background.jpg");
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -53,25 +53,36 @@ h1{
     letter-spacing: 0.1em;
     word-spacing: 5px;
     font-size: 48px;
+    color: lightgreen;
+}
+
+h3{
+    font-size: 30px;
+    color: darkgreen;
+}
+
+hr{
+    width: 15%;
 }
 
 p{
     font-size: 18px;
+    color: darkgreen;
 }
 
-@media only screen and (max-width: 600px){
-    #name-fade-effect{
-        word-spacing: 5px;
-        font-size: 32px;
-    }
+#about-me{
+    width: 70%;
+    margin: auto;
+}
 
-    h1{
-        font-size: 32px;
-    }
+#tech-stack{
+    width: 70%;
+    margin: auto;
+}
 
-    p{
-        font-size: 15px;
-    }
+#projects{
+    width: 70%;
+    margin: auto;
 }
 
 body {
@@ -100,9 +111,16 @@ body {
     text-align: center;
 }
 
-/* #about-me{
-    height: 600px;
-} */
+.img-sizing{
+    width: 90px;
+    height: 90px;
+    padding: 0px 5px;
+}
+
+tr p{
+    text-align: center;
+    overflow: visible;
+}
 
 footer{
     text-align: center;
@@ -110,18 +128,23 @@ footer{
     margin-bottom: 15px;
 }
 
-table, th, td{
-	font-family: "Arial", Arial, Sans-serif;
-	border-collapse: collapse;
-	border-color: black;
-	border: 0.125rem solid black;
-	font-size: 1.25rem;
-}
+/* Responsive changes needed for mobile and tablets */
+@media only screen and (max-width: 600px){
+    #name-fade-effect{
+        word-spacing: 5px;
+        font-size: 32px;
+    }
 
-tr:nth-child(even) {
-	background-color: Lightgray;
-}
+    h1{
+        font-size: 32px;
+    }
 
-tr:nth-child(odd) {
-	background-color: white;
+    p{
+        font-size: 15px;
+    }
+
+    #about-me{
+        width: 80%;
+        margin: auto;
+    }
 }
