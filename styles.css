@@ -143,6 +143,7 @@ body {
 }
 
 .waitTime-4{
+    padding-top: 15px;
     animation: hold-Invisability;
     animation-duration: 2.5s;
     -moz-animation: hold-Invisability;
@@ -241,7 +242,7 @@ footer{
     #name-fade-effect{
         word-spacing: 5px;
         font-size: 32px;
-        line-height: 28px;
+        line-height: 32px;
     }
 
     h1{
@@ -255,6 +256,10 @@ footer{
     .smooth-scroll-buttons{
         width: 70%;
         margin: auto;
+    }
+
+    .smooth-scroll-buttons a:hover{
+        font-size: 15px;
     }
 
     #about-me{
