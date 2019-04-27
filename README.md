@@ -1,6 +1,6 @@
-# <span style="color:lightblue"> Zynorthis.github.io
+# <span style="color:lightblue"> [Portfolio Site](https://Zynorthis.github.io)
 
-My personal software development portfolio website. The website was created using HTML and CSS with added technologies such as [Google Fonts](https://fonts.google.com/) and [Font Awesome](https://fontawesome.com/).
+My personal software development portfolio website. The website was created with the challenge of using HTML and CSS only in mind. No JavaScript and bootstrap (for its use of JavaScript and JQuery). CSS grid along with added technologies such as [Google Fonts](https://fonts.google.com/) and [Font Awesome](https://fontawesome.com/) were used to give the site a very responsive design.
 
 <hr/>
 
