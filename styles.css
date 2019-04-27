@@ -1,5 +1,6 @@
 *{
     font-family: 'Heebo', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -38,6 +39,7 @@
 #name-fade-effect{
     text-transform: uppercase;
     text-align: center;
+    color: white;
     width: 80%;
     margin: auto;
     padding-top: 50px;
@@ -47,6 +49,16 @@
     word-spacing: 15px;
     font-size: 48px;
     line-height: 48px;
+}
+
+#name-fade-effect p{
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.smooth-scroll-buttons{
+    padding: 5px 10px;
 }
 
 h1{
@@ -94,12 +106,10 @@ body {
 
 .fadeIn-2{
     text-align: center;
-    color: white;
 }
 
 .fadeIn-4{
     text-align: center;
-    color: white;
     padding-top: 25px;
 }
 
@@ -133,6 +143,7 @@ footer{
     #name-fade-effect{
         word-spacing: 5px;
         font-size: 32px;
+        line-height: 28px;
     }
 
     h1{
