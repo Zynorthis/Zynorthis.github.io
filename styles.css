@@ -24,7 +24,7 @@
 }
 
 .navbar li a:hover{
-    color: yellowgreen;
+    color: rgb(146, 208, 80);
 }
 
 .parallax{
@@ -55,10 +55,26 @@
     color: white;
     letter-spacing: 1px;
     word-spacing: 2px;
+    padding-bottom: 10px;
 }
 
 .smooth-scroll-buttons{
     padding: 5px 10px;
+}
+
+.smooth-scroll-buttons a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.5s;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.smooth-scroll-buttons a:hover{
+    color: rgb(146, 208, 80);
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 h1{
@@ -98,19 +114,101 @@ p{
 }
 
 body {
-    color: #555;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
 }
 
+/* 
+    -moz support Firefox browsers v5-15
+    -webkit support Safari v4-5 and Chrome browsers v4-42
+    -o support Opera browsers v15-29
+
+    All of these browsers in after these version support
+    animations without the use of their specified tags
+
+    Animations before the specified versions are not
+    supported and will not run.
+*/
+
+.waitTime-2{
+    animation: hold-Invisability;
+    animation-duration: 0.5s;
+    -moz-animation: hold-Invisability;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation: hold-Invisability;
+    -webkit-animation-duration: 0.5s;
+    -o-animation: hold-Invisability;
+    -o-animation-duration: 0.5s;
+}
+
+.waitTime-4{
+    animation: hold-Invisability;
+    animation-duration: 2.5s;
+    -moz-animation: hold-Invisability;
+    -moz-animation-duration: 2.5s;
+    -webkit-animation: hold-Invisability;
+    -webkit-animation-duration: 2.5s;
+    -o-animation: hold-Invisability;
+    -o-animation-duration: 2.5s;
+}
+
+.waitTime-6{
+    animation: hold-Invisability;
+    animation-duration: 4.5s;
+    -moz-animation: hold-Invisability;
+    -moz-animation-duration: 4.5s;
+    -webkit-animation: hold-Invisability;
+    -webkit-animation-duration: 4.5s;
+    -o-animation: hold-Invisability;
+    -o-animation-duration: 4.5s;
+}
+
 .fadeIn-2{
     text-align: center;
+    animation: fadeIn-2;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    -moz-animation: fadeIn-2;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-duration: 2s;
+    -webkit-animation: fadeIn-2;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 2s;
+    -o-animation: fadeIn-2;
+    -o-animation-delay: 0.5s;
+    -o-animation-duration: 2s;
 }
 
 .fadeIn-4{
     text-align: center;
-    padding-top: 25px;
+    animation: fadeIn-4;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    -moz-animation: fadeIn-4;
+    -moz-animation-delay: 2.5s;
+    -moz-animation-duration: 2s;
+    -webkit-animation: fadeIn-4;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-duration: 2s;
+    -o-animation: fadeIn-4;
+    -o-animation-delay: 2.5s;
+    -o-animation-duration: 2s;
+}
+
+.fadeIn-6{
+    animation: fadeIn-6;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    -moz-animation: fadeIn-6;
+    -moz-animation-delay: 4.5s;
+    -moz-animation-duration: 2s;
+    -webkit-animation: fadeIn-6;
+    -webkit-animation-delay: 4.5s;
+    -webkit-animation-duration: 2s;
+    -o-animation: fadeIn-6;
+    -o-animation-delay: 4.5s;
+    -o-animation-duration: 2s;
 }
 
 .container{
@@ -154,8 +252,33 @@ footer{
         font-size: 15px;
     }
 
+    .smooth-scroll-buttons{
+        width: 70%;
+        margin: auto;
+    }
+
     #about-me{
         width: 80%;
         margin: auto;
     }
+}
+
+@keyframes hold-Invisability{
+    from{ opacity: 0; }
+    to{ opacity: 0; }
+}
+
+@keyframes fadeIn-2{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+@keyframes fadeIn-4{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+@keyframes fadeIn-6{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
 }

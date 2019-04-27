@@ -25,18 +25,31 @@
     </nav>
     <div class="parallax">
         <div id="name-fade-effect">
-            <div class="fadeIn-2">
-                Jacob Taylor
+            <!-- 
+                Since both waitTime and fadeIn are
+                effecting opacity they can not be applied
+                to the same div otherwise they will overwite
+                one another.
+            -->
+            <div class="waitTime-2">
+                <div class="fadeIn-2">
+                    Jacob Taylor
+                </div>
             </div>
-            <div class="fadeIn-4">
-                Full Stack Developer
+            <div class="waitTime-4">
+                <div class="fadeIn-4">
+                    Full Stack Developer
+                </div>
             </div>
-            <div>
-                <p>"Be inspired, and create beautiful applications"</p>
-            </div>
-            <div class="smooth-scroll-buttons">
-                <!-- Navigation buttons that will 
-                    go to different sections go here. -->
+            <div class="waitTime-6">
+                <div class="fadeIn-6">
+                    <p>"Be inspired, and create beautiful applications"</p>
+                    <div class="smooth-scroll-buttons">
+                        <a href="#about-me">About Me</a>
+                        <a href="#tech-stack">Tech Stack</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
