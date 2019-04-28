@@ -63,7 +63,7 @@
 }
 
 .smooth-scroll-buttons a{
-    font-size: 15px;
+    font-size: 28px;
     text-decoration: none;
     color: white;
     transition: font-size 0.5s;
@@ -73,7 +73,7 @@
 
 .smooth-scroll-buttons a:hover{
     color: rgb(146, 208, 80);
-    font-size: 25px;
+    font-size: 32px;
     text-decoration: underline;
 }
 
@@ -166,7 +166,6 @@ body {
 }
 
 .fadeIn-2{
-    text-align: center;
     animation: fadeIn-2;
     animation-delay: 0.5s;
     animation-duration: 2s;
@@ -182,7 +181,6 @@ body {
 }
 
 .fadeIn-4{
-    text-align: center;
     animation: fadeIn-4;
     animation-delay: 2.5s;
     animation-duration: 2s;
