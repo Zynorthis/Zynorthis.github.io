@@ -98,6 +98,16 @@ p{
     color: rgb(0, 176, 80);
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;     
+}
+
+.grid-item{
+    /**/
+}
+
 #about-me{
     width: 70%;
     margin: auto;
@@ -235,6 +245,12 @@ footer{
     margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 1250px){
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
 /* Responsive changes needed for mobile and tablets */
 @media only screen and (max-width: 600px){
     #name-fade-effect{
@@ -251,13 +267,18 @@ footer{
         font-size: 15px;
     }
 
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+
     .smooth-scroll-buttons{
         width: 70%;
         margin: auto;
+        font-size: 20px;
     }
 
     .smooth-scroll-buttons a:hover{
-        font-size: 15px;
+        font-size: 28px;
     }
 
     #about-me{
