@@ -98,6 +98,10 @@ p{
     color: rgb(0, 176, 80);
 }
 
+.container hr{
+    margin-bottom: 30px;
+}
+
 .grid-container-languages{
     display: grid;
     grid-template-columns: 90px 90px 90px 90px 90px 90px;
@@ -122,8 +126,29 @@ p{
     grid-gap: 35px;     
 }
 
+.grid-container-projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px; 
+}
+
 .grid-item{
     justify-self: center;
+}
+
+.project-card{
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.project-card:hover{
+    border: 2px solid rgb(146, 208, 80);
+    padding: 35px 25px;
+    cursor: pointer;
 }
 
 #about-me{
