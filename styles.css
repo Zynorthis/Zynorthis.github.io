@@ -98,14 +98,32 @@ p{
     color: rgb(0, 176, 80);
 }
 
-.grid-container{
+.grid-container-languages{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 10px;     
+    grid-template-columns: 90px 90px 90px 90px 90px 90px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px;     
+}
+
+.grid-container-frameworks{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px;     
+}
+
+.grid-container-other{
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px;     
 }
 
 .grid-item{
-    /**/
+    justify-self: center;
 }
 
 #about-me{
@@ -246,8 +264,16 @@ footer{
 }
 
 @media only screen and (max-width: 1250px){
-    .grid-container{
-        grid-template-columns: auto auto auto;
+    .grid-container-languages{
+        grid-template-columns: 90px 90px 90px;
+    }
+
+    .grid-container-frameworks{
+        grid-template-columns: 90px 90px 90px;
+    }
+
+    .grid-container-other{
+        grid-template-columns: 90px 90px;
     }
 }
 
@@ -267,8 +293,16 @@ footer{
         font-size: 15px;
     }
 
-    .grid-container{
-        grid-template-columns: auto auto;
+    .grid-container-languages{
+        grid-template-columns: 90px 90px;
+    }
+
+    .grid-container-frameworks{
+        grid-template-columns: 90px 90px;
+    }
+
+    .grid-container-other{
+        grid-template-columns: 90px 90px;
     }
 
     .smooth-scroll-buttons{
