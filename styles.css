@@ -27,6 +27,15 @@
     color: rgb(146, 208, 80);
 }
 
+i{
+   font-size: 1.5em;
+}
+
+i:hover{
+    color: rgb(146, 208, 80);
+    cursor: pointer;
+}
+
 .parallax{
     background-image:  url("/Resources/img/background.jpg");
     height: 500px;
@@ -148,7 +157,6 @@ p{
 .project-card:hover{
     border: 2px solid rgb(146, 208, 80);
     padding: 35px 25px;
-    cursor: pointer;
 }
 
 #about-me{
@@ -288,6 +296,7 @@ footer{
     margin-bottom: 15px;
 }
 
+/* Responsive changes needed for mobile and tablets */
 @media only screen and (max-width: 1250px){
     .grid-container-languages{
         grid-template-columns: 90px 90px 90px;
@@ -302,7 +311,12 @@ footer{
     }
 }
 
-/* Responsive changes needed for mobile and tablets */
+@media only screen and (max-width: 800px){
+    .grid-container-projects{
+        grid-template-columns: auto;
+    }
+}
+
 @media only screen and (max-width: 600px){
     #name-fade-effect{
         word-spacing: 5px;
