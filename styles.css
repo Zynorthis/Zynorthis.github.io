@@ -315,6 +315,21 @@ footer{
     .grid-container-projects{
         grid-template-columns: auto;
     }
+
+    #about-me{
+        width: 100%;
+        margin: auto;
+    }
+
+    #tech-stack{
+        width: 90%;
+        margin: auto;
+    }
+
+    #projects{
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -355,7 +370,17 @@ footer{
     }
 
     #about-me{
-        width: 80%;
+        width: 100%;
+        margin: auto;
+    }
+
+    #projects{
+        width: 100%;
+        margin: auto;
+    }
+
+    #tech-stack{
+        width: 100%;
         margin: auto;
     }
 }
