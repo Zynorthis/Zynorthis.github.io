@@ -27,11 +27,11 @@
     color: rgb(146, 208, 80);
 }
 
-i{
+.project-card i{
    font-size: 1.5em;
 }
 
-i:hover{
+.project-card i:hover{
     color: rgb(146, 208, 80);
     cursor: pointer;
 }
@@ -93,9 +93,13 @@ h1{
     color: rgb(146, 208, 80);
 }
 
-h3{
+.container h3, .project-card h3{
     font-size: 30px;
     color: rgb(0, 176, 80);
+}
+
+.footer-grid h3{
+    color: rgb(0, 176, 80)
 }
 
 hr{
@@ -143,6 +147,14 @@ p{
     grid-gap: 35px; 
 }
 
+.footer-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+}
+
 .grid-item{
     justify-self: center;
 }
@@ -157,6 +169,23 @@ p{
 .project-card:hover{
     border: 2px solid rgb(146, 208, 80);
     padding: 35px 25px;
+}
+
+.footer-section-links{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto auto;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 15px;
+}
+
+.footer-navbar-links{
+    display: grid;
+    grid-auto-rows: auto auto;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 15px;
 }
 
 #about-me{
@@ -178,6 +207,20 @@ body {
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
+}
+
+.footer-grid ul{
+    list-style: none;
+    padding: 0px;
+}
+.footer-grid ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-grid li a:hover{
+    color: rgb(146, 208, 80);
 }
 
 /* 
@@ -292,8 +335,8 @@ tr p{
 
 footer{
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Responsive changes needed for mobile and tablets */
@@ -314,6 +357,21 @@ footer{
 @media only screen and (max-width: 800px){
     .grid-container-projects{
         grid-template-columns: auto;
+    }
+
+    #about-me{
+        width: 100%;
+        margin: auto;
+    }
+
+    #tech-stack{
+        width: 90%;
+        margin: auto;
+    }
+
+    #projects{
+        width: 90%;
+        margin: auto;
     }
 }
 
@@ -355,8 +413,26 @@ footer{
     }
 
     #about-me{
-        width: 80%;
+        width: 100%;
         margin: auto;
+    }
+
+    #projects{
+        width: 100%;
+        margin: auto;
+    }
+
+    #tech-stack{
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-grid h3{
+        font-size: 18px;
+    }
+
+    .footer-grid ul li a{
+        font-size: 15px;
     }
 }
 
