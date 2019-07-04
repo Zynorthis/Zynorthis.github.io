@@ -1,6 +1,13 @@
 *{
     font-family: 'Heebo', sans-serif;
     scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
 }
 
 .navbar{
@@ -98,21 +105,27 @@ h1{
     color: rgb(0, 176, 80);
 }
 
+footer{
+    background-color: rgb(124, 124, 124);
+}
+
 .footer-grid h3{
     color: rgb(0, 176, 80)
 }
 
-hr{
+.container hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 15%;
+}
+
+.container p{
+    margin: 15px 0px;
 }
 
 p{
     font-size: 18px;
     color: rgb(0, 176, 80);
-}
-
-.container hr{
-    margin-bottom: 30px;
 }
 
 .grid-container-languages{
@@ -336,7 +349,7 @@ tr p{
 footer{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 /* Responsive changes needed for mobile and tablets */
