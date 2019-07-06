@@ -1,6 +1,13 @@
 *{
     font-family: 'Heebo', sans-serif;
     scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
 }
 
 .navbar{
@@ -8,7 +15,7 @@
 }
 
 .navbar ul{
-    padding: 0;
+    padding: 0px;
     list-style: none;
 }
 
@@ -98,21 +105,36 @@ h1{
     color: rgb(0, 176, 80);
 }
 
+footer{
+    background-color: rgb(50, 50, 50);
+    padding: 15px 0px;
+}
+
 .footer-grid h3{
     color: rgb(0, 176, 80)
 }
 
-hr{
+#about-me .container h1{
+    padding-top: 30px;
+}
+
+.container h3{
+    padding: 15px 0px;
+}
+
+.container hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 15%;
+}
+
+.container p{
+    margin: 15px 0px;
 }
 
 p{
     font-size: 18px;
     color: rgb(0, 176, 80);
-}
-
-.container hr{
-    margin-bottom: 30px;
 }
 
 .grid-container-languages{
@@ -216,7 +238,7 @@ body {
 .footer-grid ul li a{
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .footer-grid li a:hover{
@@ -336,7 +358,7 @@ tr p{
 footer{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 /* Responsive changes needed for mobile and tablets */
@@ -380,6 +402,15 @@ footer{
         word-spacing: 5px;
         font-size: 32px;
         line-height: 32px;
+    }
+
+    .navbar .container{
+        padding: 5px 0px;
+    }
+
+    .navbar li{
+        font-size: 15px;
+        padding-right: 6px;
     }
 
     h1{
